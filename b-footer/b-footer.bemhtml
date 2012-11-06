@@ -1,0 +1,11 @@
+block b-footer {
+
+    tag: 'div'
+
+    content: [
+        {
+            elem: 'inner',
+            content: this.ctx.content
+        }
+    ]
+}

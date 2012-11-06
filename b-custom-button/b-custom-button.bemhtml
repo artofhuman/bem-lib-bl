@@ -1,0 +1,35 @@
+block b-custom-button{
+    tag: this.ctx.url ? 'a' : 'div'
+    
+    attrs: {
+
+        var ctx = this.ctx;
+        a = {};
+        if ( ctx.url ) {
+            a = { href: ctx.url };
+        }
+        return a;
+
+    }
+    
+    content: [
+        {
+            elem: 'first',
+            tag: 'div'
+        },
+        {
+            elem: 'body',
+            tag: 'div',
+            content: {
+                elem: 'inner',
+                content: this.ctx.content
+            }
+        }
+        // {
+        //     elem: 'last',
+        //     tag: 'div'
+        // }
+    ]
+    
+    elem text, tag: 'span'
+}

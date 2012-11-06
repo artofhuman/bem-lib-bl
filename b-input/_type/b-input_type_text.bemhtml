@@ -1,0 +1,10 @@
+block b-input, mod type text {
+
+    tag: 'input'
+
+    attrs: { 
+        value: this.ctx.value,
+        type: 'text',
+        name: this.ctx.name ? this.ctx.name : undefined 
+    }
+}

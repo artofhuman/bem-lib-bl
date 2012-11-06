@@ -1,0 +1,11 @@
+block i-jquery-ui, elem core, default: {
+    
+    return apply(
+        this._mode = '',
+        this.ctx = {
+            block: 'b-page',
+            elem: 'js',
+            url: '/lib-bl/i-jquery-ui/__core/_version/jquery-ui.js'
+        }
+    );
+}

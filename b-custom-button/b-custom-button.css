@@ -1,0 +1,28 @@
+.b-custom-button
+{
+    display: inline-block;
+    text-decoration: none;
+    white-space: nowrap;
+    cursor: pointer;
+    border: none;
+    padding: 0;
+}
+.b-custom-button__first,
+.b-custom-button__body,
+.b-custom-button__last
+{
+    height: inherit;
+    display: block;
+    float :left;
+}
+.b-custom-button__text
+{
+    color: #000;
+    white-space: nowrap;
+}
+.b-custom-button__text_state_abbr{
+    color: #666666;
+}
+.b-custom-button__inner{
+    overflow: hidden;
+}

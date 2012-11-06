@@ -1,0 +1,8 @@
+.i-clearfix { zoom:1; }
+.i-clearfix:after, .i-clearfix:before {
+  content:"\0020";
+  display:block;
+  height:0;
+  visibility:hidden;
+}
+.i-clearfix:after { clear: both}

@@ -1,0 +1,10 @@
+block i-jquery-ui, elem styles, default: {
+    local(
+        this._mode = '',
+        this.ctx = {
+            block: 'b-page',
+            elem: 'css',
+            url: 'http://yandex.st/jquery-ui/1.8.17/themes/humanity/jquery.ui.all.min.css'
+        }
+    ) this.apply()
+}

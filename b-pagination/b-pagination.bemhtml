@@ -1,0 +1,101 @@
+block b-pagination {
+    content: [
+        {
+            elem: 'list',
+            tag: 'ul',
+            content: [
+                {
+                    elem: 'arrow',
+                    tag: 'li',
+                    content: {
+                        block: 'b-link',
+                        url: '#',
+                        content: {
+                            block: 'b-icon',
+                            mods: { action: 'first-page'}
+                        }
+                    }
+                },
+                {
+                    elem: 'arrow',
+                    tag: 'li',
+                    content: {
+                        block: 'b-link',
+                        url: '#',
+                        content: {
+                            block: 'b-icon',
+                            mods: { action: 'prev-page'}
+                        }
+                    }
+                },
+                {
+                    elem: 'page',
+                    tag: 'li',
+                    content: {
+                        block: 'b-link',
+                        url: '#',
+                        content: '1'
+                    }
+                },
+                {
+                    elem: 'page',
+                    tag: 'li',
+                    content: {
+                        block: 'b-link',
+                        url: '#',
+                        content: '2'
+                    }
+                },
+                {
+                    elem: 'page',
+                    tag: 'li',
+                    mods: { state: 'current' },
+                    content: '3'
+                },
+                {
+                    elem: 'page',
+                    tag: 'li',
+                    content: {
+                        block: 'b-link',
+                        url: '#',
+                        content: '4'
+                    }
+                },
+                {
+                    elem: 'page',
+                    tag: 'li',
+                    content: {
+                        block: 'b-link',
+                        url: '#',
+                        content: '5'
+                    }
+                },
+                {
+                    elem: 'arrow',
+                    tag: 'li',
+                    content: {
+                        block: 'b-link',
+                        url: '#',
+                        content: {
+                            block: 'b-icon',
+                            mods: { action: 'next-page'}
+                        }
+                    }
+                },
+                {
+                    elem: 'arrow',
+                    tag: 'li',
+                    content: {
+                        block: 'b-link',
+                        url: '#',
+                        content: {
+                            block: 'b-icon',
+                            mods: { action: 'last-page'}
+                        }
+                    }
+                }
+                
+            ]
+        }
+    ]
+}

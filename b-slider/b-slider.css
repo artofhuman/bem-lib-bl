@@ -1,0 +1,30 @@
+.b-slider{
+    position: relative;
+}
+.b-slider__wrap
+{
+    position: relative;
+    overflow: hidden;
+}
+.b-slider__jcarousel{
+    position: absolute;
+    width: 20000em;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.b-slider__item{
+    float: left;
+}
+.b-slider__prev,
+.b-slider__next{
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+}
+.b-slider__prev{
+    left: 0;
+}
+.b-slider__next{
+    right: 0;
+}

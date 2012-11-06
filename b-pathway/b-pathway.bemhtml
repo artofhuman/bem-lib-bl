@@ -1,0 +1,30 @@
+block b-pathway {
+
+    content: this.ctx.content
+
+    elem 'item' {
+        tag: 'a',
+        mix: [{block: 'b-link'}],
+
+        attrs: {
+
+            var ctx = this.ctx,
+                a = { href: '#' },
+                props = ['title', 'target'], p;
+
+            while(p = props.pop()) ctx[p] && (a[p] = ctx[p]);
+
+            return a;
+
+        }
+    }
+
+    elem 'separator' {
+        tag: 'span'
+    }
+
+    elem 'current' {
+        tag: 'span'
+    }
+}
+

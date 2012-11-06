@@ -1,0 +1,15 @@
+block b-custom-form-control, mod layout checkbox {
+    content:
+    [
+        {
+            elem: 'input',
+            elemMods: {type: 'checkbox'},
+            attrs: {type:'checkbox', name: 'checkbox'},
+            tag: 'input'
+        },
+        {
+            block: 'b-icon',
+            mods: {type: 'checkbox'}
+        }
+    ]
+}

@@ -1,0 +1,28 @@
+block b-slider {
+
+    tag: 'div'
+
+    content: [
+        {
+            elem: 'prev',
+            content: this.ctx.prev
+        },
+        {
+            elem: 'wrap',
+            content: {
+                elem: 'jcarousel',
+                tag: 'ul',
+                content: this.ctx.content 
+            }
+        },
+        {
+            elem: 'next',
+            content: this.ctx.next
+        }
+    ]
+
+
+    elem item {
+        tag: 'li',
+    }
+}

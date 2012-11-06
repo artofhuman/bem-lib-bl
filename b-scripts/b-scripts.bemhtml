@@ -1,0 +1,9 @@
+block b-scripts{
+
+    elem js {
+        bem: false,
+        tag: 'script',
+        attrs, this.ctx.url: { src: this.ctx.url }
+    }
+    
+}

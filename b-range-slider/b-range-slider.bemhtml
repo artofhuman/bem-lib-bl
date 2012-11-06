@@ -1,0 +1,58 @@
+block b-range-slider {
+
+    content: [
+        { elem: 'ui-slider' },
+        { 
+            elem: 'range',
+            min: this.ctx.min ? this.ctx.min : '50',
+            max: this.ctx.max ? this.ctx.max : '1000'
+        }
+    ]
+
+    elem range{
+
+        content: [
+            {
+                block: 'b-input',
+                mods: { type: 'hidden'},
+                mix: [{ block: 'b-range-slider', elem: 'min_val'}],
+                value: this.ctx.min
+            },
+            {
+                block: 'b-input',
+                mods: { type: 'hidden'},
+                mix: [{ block: 'b-range-slider', elem: 'max_val'}],
+                value: this.ctx.max
+            }
+        ]
+    }
+
+}
+/*
+block b-range-slider {
+    
+    js: false
+    
+    content: [
+        {
+            elem: 'range',
+            content: [
+                {
+                    block: 'b-input',
+                    mods: { type: 'hidden'},
+                    mix: [{ block: 'b-range-slider', elem: 'min_val'}],
+                    value: this.ctx.min ? this.ctx.min : '50'
+                },
+                {
+                    block: 'b-input',
+                    mods: { type: 'hidden'},
+                    mix: [{ block: 'b-range-slider', elem: 'max_val'}],
+                    value: this.ctx.max ? this.ctx.max : '100'
+                }
+            ]
+        },
+        {
+            elem: 'ui-slider'
+        }
+    ]
+}*/

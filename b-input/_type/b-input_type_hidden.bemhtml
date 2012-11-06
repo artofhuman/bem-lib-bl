@@ -1,0 +1,10 @@
+block b-input, mod type hidden {
+
+    tag: 'input'
+
+    attrs: { 
+        value: this.ctx.value,
+        type: 'hidden',
+        name: this.ctx.name ? this.ctx.name : undefined 
+    }
+}

@@ -1,0 +1,14 @@
+.b-pagination__list{
+    overflow: hidden;
+    zoom: 1; 
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.b-pagination__arrow{
+    float: left;
+}
+.b-pagination__page{
+    float: left;
+    margin: 0 5px;
+}

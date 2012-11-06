@@ -1,0 +1,8 @@
+block b-input, mod type textarea {
+
+    tag: 'textarea'
+
+    attrs: { 
+        name: this.ctx.name ? this.ctx.name : undefined 
+    }
+}

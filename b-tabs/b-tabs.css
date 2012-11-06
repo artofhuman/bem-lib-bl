@@ -1,0 +1,13 @@
+.b-tabs__tab{
+    cursor: pointer;
+}
+.b-tabs__tab_state_active{
+    cursor: default !important;
+}
+.b-tabs__item
+{
+    display: none;
+}
+.b-tabs__item_state_active{
+    display: block;
+}

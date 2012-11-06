@@ -1,0 +1,70 @@
+block b-custom-select {
+
+    tag: 'select'
+
+    attrs: { name: this.ctx.name, id: this.ctx.id }
+
+    content: [
+        {
+            elem: 'option',
+            tag: 'option',
+            content: 'Тестовая контент'
+        },
+        {
+            elem: 'option',
+            tag: 'option',
+            content: 'Тестовая контент'
+        },
+        {
+            elem: 'option',
+            tag: 'option',
+            content: 'Тестовая контент'
+        },
+        {
+            elem: 'option',
+            tag: 'option',
+            content: 'Тестовая контент'
+        },
+        {
+            elem: 'option',
+            tag: 'option',
+            content: 'Тестовая контент'
+        },
+        {
+            elem: 'option',
+            tag: 'option',
+            content: 'Тестовая контент'
+        },
+        {
+            elem: 'option',
+            tag: 'option',
+            content: 'Тестовая контент'
+        },
+        {
+            elem: 'option',
+            tag: 'option',
+            content: 'Тестовая контент'
+        },
+        {
+            elem: 'option',
+            tag: 'option',
+            content: 'Тестовая контент'
+        },
+        {
+            elem: 'option',
+            tag: 'option',
+            content: 'Тестовая контент'
+        },
+        {
+            elem: 'option',
+            tag: 'option',
+            content: 'Тестовая контент'
+        },
+        {
+            elem: 'option',
+            tag: 'option',
+            content: 'Тестовая контент'
+        }
+    ]
+
+}
