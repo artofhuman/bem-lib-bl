@@ -1,0 +1,63 @@
+.b-custom-form-checkbox{
+    white-space: nowrap;
+}
+.i-ua_js_yes .b-custom-form-checkbox__checkbox {
+    background: none;
+    border: 0 none;
+    margin: 0;
+    opacity: 0;
+    outline: 0 none;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    z-index: 4;
+}
+.b-custom-form-checkbox__inner{
+    position: relative;
+    display: inline-block;
+    cursor: default;
+}
+.b-custom-form-checkbox__box{
+    margin: 0 2px 2px 2px;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+
+    background: #fafaf9; /* Old browsers */
+    background: -moz-linear-gradient(top,  #fafaf9 0%, #e8e7e2 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fafaf9), color-stop(100%,#e8e7e2)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #fafaf9 0%,#e8e7e2 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #fafaf9 0%,#e8e7e2 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #fafaf9 0%,#e8e7e2 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #fafaf9 0%,#e8e7e2 100%); /* W3C */
+    /* TODO move to ie tech */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fafaf9', endColorstr='#e8e7e2',GradientType=0 ); /* IE6-9 */
+
+    border-radius: 2px;
+    border-right: 1px solid #d4d3ce;
+    border-bottom: 1px solid #d4d3ce;
+
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    box-shadow: inset 1px 1px 1px #7b7b7a;
+    position: relative
+}
+
+.b-custom-form-checkbox__label{
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 2px;
+    font-size: 1.06em;
+}
+
+.b-custom-form-checkbox__mark{
+    display: none;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    background: url("data:image/gif;base64,R0lGODlhDQANALMJADIyMi4uLoWFhVZWVnZ2di8vLzAwMDExMTMzMwAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAAAkALAAAAAANAA0AAAQhMMlJq70Y4Yn0BoBQHdNxEKOZmINlvDBWzMWWBIGt73wEADs=") no-repeat 50% transparent;
+}
+.b-custom-form-checkbox_checked_yes .b-custom-form-checkbox__mark{
+    display: inline-block !important;
+}

@@ -1,0 +1,7 @@
+.b-popup
+{
+    display: none;
+}
+.b-popup__content{
+    padding: 5px;
+}

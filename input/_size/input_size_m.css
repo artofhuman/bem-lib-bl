@@ -1,0 +1,10 @@
+.input_size_m
+{
+    line-height: 28px;
+    font-size: 13px;
+}
+
+.input_size_m .input__clear
+{
+    background-size: 84% 84%;
+}

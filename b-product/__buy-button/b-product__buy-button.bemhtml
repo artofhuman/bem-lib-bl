@@ -1,0 +1,6 @@
+block b-product, elem buy-button {
+
+    tag: 'a',
+    attrs: {href: '#'},
+    content: 'В корзину'
+}

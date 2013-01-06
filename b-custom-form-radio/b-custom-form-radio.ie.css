@@ -1,0 +1,7 @@
+.b-custom-form-radio__box
+{
+   visibility: hidden;
+}
+.b-custom-form-radio__radio{
+    top: 5px !important;
+}

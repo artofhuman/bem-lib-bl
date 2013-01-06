@@ -1,0 +1,28 @@
+.b-product-count-changer__input
+{
+    height: 20px;
+    text-align: center;
+}
+.b-product-count-changer__button{
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background-color: #262626;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 2px;
+    margin-right: 5px;
+    text-align: center;
+    font-size: 16px;
+}
+.b-product-count-changer .input{
+    width: 35px;
+}
+.b-product-count-changer .input__input
+{
+    padding-left: 0;
+}
+.b-product-count-changer .input
+{
+    margin-right: 5px;
+}

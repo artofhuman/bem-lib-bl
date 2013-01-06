@@ -1,0 +1,36 @@
+block b-custom-form-radio {
+
+    js: true,
+    tag: 'span',
+
+    content:[
+        {
+            elem: 'inner',
+            tag: 'span',
+            content: [
+                {
+                    elem: 'radio',
+                    tag: 'input',
+                    attrs: {
+                        type: 'radio',
+                        name:  this.ctx.name,
+                        value: this.ctx.value
+                    }
+                },
+                {
+                    elem: 'box',
+                    tag: 'i',
+                    content: {
+                        elem: 'mark',
+                        tag: 'i'
+                    }
+                }
+            ]
+        },
+        {
+            elem: 'label',
+            tag: 'label',
+            content: this.ctx.label
+        }
+    ]
+}

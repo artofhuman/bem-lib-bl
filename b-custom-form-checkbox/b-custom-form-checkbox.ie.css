@@ -1,0 +1,7 @@
+.b-custom-form-checkbox__box
+{
+   visibility: hidden;
+}
+.b-custom-form-checkbox__checkbox{
+    top: 3px !important;
+}

@@ -1,0 +1,17 @@
+block b-rur {
+
+    tag: 'span',
+
+    content:
+    [
+        {
+            tag: '',
+            content: 'р'
+        },
+        {
+            tag: 'span',
+            elem: 'point',
+            content: '.'
+        }
+    ]
+}

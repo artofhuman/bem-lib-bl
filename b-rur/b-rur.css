@@ -1,0 +1,26 @@
+.b-rur {
+    font-family: Arial,sans-serif !important;
+    font-weight: normal !important;
+    position: relative;
+    text-transform: uppercase;
+/*     vertical-align: top; */
+}
+.b-rur__point {
+    display: none;
+}
+.b-rur:before, * html .b-rur__before {
+    content: "-";
+    font-size: 90%;
+    left: -0.035em;
+    line-height: 1;
+    position: absolute;
+    top: 0.1em;
+}
+.b-rur:after, * html .b-rur__point {
+    content: "–";
+    display: block;
+    left: 0;
+    line-height: 1;
+    position: absolute;
+    top: 0.15em;
+}

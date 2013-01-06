@@ -1,0 +1,9 @@
+.input_type_textarea .input__box
+{
+    padding: 1px 1px 1px 0;
+}
+
+.input_type_textarea .input__input
+{
+    padding-top: 0.38em;
+}

@@ -1,0 +1,4 @@
+block roundabout-slider {
+    js: true,
+    tag: 'ul'
+}

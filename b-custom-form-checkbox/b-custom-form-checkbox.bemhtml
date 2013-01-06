@@ -1,0 +1,32 @@
+block b-custom-form-checkbox {
+
+    js: true,
+    tag: 'span',
+
+    content:[
+        {
+            elem: 'inner',
+            tag: 'span',
+            content: [
+                {
+                    elem: 'checkbox',
+                    tag: 'input',
+                    attrs: {type: 'checkbox', name: 'ckeck', value: '1'}
+                },
+                {
+                    elem: 'box',
+                    tag: 'i',
+                    content: {
+                        elem: 'mark',
+                        tag: 'i'
+                    }
+                }
+            ]
+        },
+        {
+            elem: 'label',
+            tag: 'label',
+            content: this.ctx.label
+        }
+    ]
+}

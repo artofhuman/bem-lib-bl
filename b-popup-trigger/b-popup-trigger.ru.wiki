@@ -1,0 +1,32 @@
+Тригер для инициализации poppu
+
+
+{
+    block: 'b-popup-trigger',
+    content: [
+        {
+            elem: 'trigger',
+            content:
+            {
+                block: 'b-link',
+                mods: {pseudo: 'yes'},
+                content:
+                [
+                    {
+                        elem: 'inner',
+                        content: 'Триггер'
+                    }
+                ]
+            }
+        },
+        {
+            block: 'popup',
+            content: [
+                {
+                    elem: 'content',
+                    content: 'Контент popup'
+                }
+            ]
+        }
+    ]
+}

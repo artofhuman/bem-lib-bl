@@ -1,0 +1,60 @@
+block b-product {
+
+    content: [
+        {
+            elem: 'image'
+        },
+        {
+            elem: 'title'
+        },
+        {
+            elem: 'price'
+
+        },
+        {
+            elem: 'description',
+            content: this.ctx.content
+        },
+        {
+            block: 'b-product-count-changer'
+        },
+        {
+            elem: 'buy-button'
+        }
+    ]
+}
+
+
+block b-product , elem image {
+    content: {
+        block: 'b-link',
+        url: '#',
+        content: {
+            tag: 'img',
+            attrs: {'src': 'http://placekitten.com/140/100'}
+        }
+    }
+}
+
+block b-product, elem title {
+
+    content: {
+        block: 'b-link',
+        url: '#',
+        content: 'Тестовый товар'
+    }
+
+}
+
+block b-product, elem price {
+
+    content: [
+        {
+            tag: '',
+            content: '2500 '
+        },
+        {
+            block: 'b-rur'
+        }
+    ]
+}

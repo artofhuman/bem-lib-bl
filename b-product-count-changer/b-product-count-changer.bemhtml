@@ -1,0 +1,41 @@
+block b-product-count-changer {
+
+    js: true
+
+    content: [
+        {
+            block: 'input',
+            value: '1',
+            mods: {type:'text', theme: 'default'},
+            content:
+            [
+                {
+                    elem: 'input',
+                    mix: [{block: 'b-product-count-changer', elem: 'input'}],
+                    attr: {type: 'text'}
+                }
+            ]
+        },
+        // {
+        //     elem: 'input',
+        //     tag: 'input',
+        //     attrs: {
+        //         value: '1',
+        //         type: 'text'
+        //     }
+        // },
+        {
+            tag: 'span',
+            elem: 'text',
+            content: 'шт.'
+        },
+        {
+            elem: 'button',
+            elemMods: {action: 'minus'}
+        },
+        {
+            elem: 'button',
+            elemMods: {action: 'plus'}
+        }
+    ]
+}
