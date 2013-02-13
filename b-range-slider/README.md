@@ -16,6 +16,11 @@ if ($.fn.slider) {
     });
 }
 
+Также нужно подключить jQuery UI
+{ elem: 'js', url: 'http://yandex.st/jquery-ui/1.9.2/jquery-ui.min.js'},
+{ elem: 'js', url: 'http://yandex.st/jquery-ui/1.9.2/jquery.ui.slider.min.js'},
+
+
 и добавить нужные стили для визуализации :)
 ===============================================
 

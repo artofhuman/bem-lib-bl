@@ -1,5 +1,7 @@
 block b-range-slider {
 
+    js: true,
+
     content: [
         { elem: 'ui-slider' },
         { 
@@ -28,31 +30,3 @@ block b-range-slider {
     }
 
 }
-/*
-block b-range-slider {
-    
-    js: false
-    
-    content: [
-        {
-            elem: 'range',
-            content: [
-                {
-                    block: 'b-input',
-                    mods: { type: 'hidden'},
-                    mix: [{ block: 'b-range-slider', elem: 'min_val'}],
-                    value: this.ctx.min ? this.ctx.min : '50'
-                },
-                {
-                    block: 'b-input',
-                    mods: { type: 'hidden'},
-                    mix: [{ block: 'b-range-slider', elem: 'max_val'}],
-                    value: this.ctx.max ? this.ctx.max : '100'
-                }
-            ]
-        },
-        {
-            elem: 'ui-slider'
-        }
-    ]
-}*/
