@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'daxlinepro';
+    src: local('daxlinepro');
+    src: url('font_face_daxlinepro.ttf');
+}
+
+.font_face_daxlinepro
+{
+    font-family: 'daxlinepro';
+}
