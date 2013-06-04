@@ -1,0 +1,15 @@
+block b-content, mod with right-sidebar {
+
+    //mix: [{ block: 'b-text'}],
+
+    content: [
+        {
+            elem: 'main',
+            content: this.ctx.content
+        },
+        {
+            elem: 'right',
+            content: this.ctx.right
+        }
+    ]
+}
