@@ -1,0 +1,17 @@
+block b-content, mod with left-and-right-sidebar {
+
+    content: [
+        {
+            elem: 'left',
+            content: this.ctx.left
+        },
+        {
+            elem: 'main',
+            content: this.ctx.content
+        },
+        {
+            elem: 'right',
+            content: this.ctx.right
+        }
+    ]
+}

@@ -1,0 +1,26 @@
+.b-content_with_left-and-right-sidebar
+{
+    width: 100%;
+}
+.b-content_with_left-and-right-sidebar .b-content__left
+{
+    display: inline-block;
+    width: 30%;
+}
+
+.b-content_with_left-and-right-sidebar .b-content__right
+{
+    display: inline-block;
+    width: 30%;
+}
+
+.b-content_with_left-and-right-sidebar .b-content__main
+{
+    display: inline-block;
+    width: 40%;
+}
+.b-content_with_left-and-right-sidebar .b-content__left,
+.b-content_with_left-and-right-sidebar .b-content__main
+{
+    vertical-align: top;
+}

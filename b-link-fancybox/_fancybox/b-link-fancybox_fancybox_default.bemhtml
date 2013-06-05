@@ -1,0 +1,4 @@
+block b-link-fancybox, mod fancybox default {
+    tag: 'a'
+    js: true
+}

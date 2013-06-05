@@ -1,0 +1,8 @@
+block b-vk-like {
+    
+    js: true
+    tag: 'div'
+
+    attrs: { id: 'vk_like' }
+
+}
