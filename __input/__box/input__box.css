@@ -1,0 +1,10 @@
+/* elem box — a border input */
+.input__box
+{
+    position: relative;
+
+    display: block;
+
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}

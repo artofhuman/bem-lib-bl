@@ -1,10 +1,21 @@
 .input_size_m
 {
-    line-height: 28px;
-    font-size: 13px;
+    line-height: 32px;
+
+    font-size: 15px;
 }
 
 .input_size_m .input__clear
 {
-    background-size: 84% 84%;
+    width: 31px;
+}
+
+.input_size_m .input__control
+{
+    padding-left: 10px;
+}
+
+.input_size_m .input__hint
+{
+    padding-left: 11px;
 }

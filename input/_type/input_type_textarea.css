@@ -1,9 +1,11 @@
 @media all and (min-width:0px) {
-    .input_type_textarea .input__input
+    .input_type_textarea .input__control
     {
         display: block;
 
-        padding: 0.53em 1px 1px 0.4em;
+        padding-top: 0.4em;
+        padding-right: 1px;
+        padding-bottom: 1px;
 
         vertical-align: baseline;
 
@@ -14,7 +16,7 @@
     }
 
     /* Only FF */
-    .input_type_textarea .input__input, x:-moz-any-link
+    .input_type_textarea .input__control, x:-moz-any-link
     {
         padding-top: 0.44em;
     }
@@ -25,8 +27,19 @@
     }
 }
 
+/* ::after — fade for long queries, is to the right */
+.input_type_textarea .input__box::after
+{
+    display: none;
+}
+
+.input_type_textarea .input__box
+{
+    padding: 1px 1px 1px 0;
+}
+
 /* body — increases the weight of selector to override INPUT height */
-body .input_type_textarea .input__input
+body .input_type_textarea .input__control
 {
     height: auto;
     min-height: 2em;

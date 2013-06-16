@@ -6,13 +6,12 @@ block b-product-count-changer {
         {
             block: 'input',
             value: '1',
-            mods: {type:'text', theme: 'default'},
+            mods: { type:'text', theme: 'default', clear: 'no' },
             content:
             [
                 {
-                    elem: 'input',
-                    mix: [{block: 'b-product-count-changer', elem: 'input'}],
-                    attr: {type: 'text'}
+                    elem: 'control',
+                    mix: [{ block: 'b-product-count-changer', elem: 'input' }]
                 }
             ]
         },
