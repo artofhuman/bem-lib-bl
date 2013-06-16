@@ -1,6 +1,7 @@
 block b-custom-select {
 
-    tag: 'select'
+    tag: 'select',
+    js: true,
 
     attrs: { name: this.ctx.name, id: this.ctx.id }
 
