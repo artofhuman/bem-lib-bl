@@ -18,3 +18,20 @@
   * ((/blocks-desktop/input/input.jsdoc.wiki JS-API));
   * ((http://wiki.yandex-team.ru/Lego/controls/api-forms/#form-input Общее API контролов)).
 \\
+
+== Пример
+{
+    block: 'input',
+    id: 'email',
+    name: 'email',
+    mods: { type: 'text', theme: 'default' },
+    content: [
+        {
+            elem: 'hint',
+            content: 'email'
+        },
+        {
+            elem: 'control'
+        }
+    ]
+}
