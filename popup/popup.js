@@ -268,18 +268,26 @@ BEM.DOM.decl('popup',  /** @lends block.prototype */ {
     _getUnder : function() {
 
         if(!this._under) {
-            var under = $(BEMHTML.apply({
-                block : 'i-popup',
-                zIndex : this.params.zIndex,
-                mods : {
-                    autoclosable : this.getMod('autoclosable') || 'yes',
-                    fixed : this.hasMod('direction', 'fixed') && 'yes'
-                },
-                underMods : this.params.underMods,
-                underMix : [{ block : 'popup', elem : 'under' }]
-            }));
+            // var under = $(BEMHTML.apply({
+            //     block : 'i-popup',
+            //     zIndex : this.params.zIndex,
+            //     mods : {
+            //         autoclosable : this.getMod('autoclosable') || 'yes',
+            //         fixed : this.hasMod('direction', 'fixed') && 'yes'
+            //     },
+            //     underMods : this.params.underMods,
+            //     underMix : [{ block : 'popup', elem : 'under' }]
+            // }));
 
-            (this._under = this.findBlockOn(under, 'i-popup'))
+            // var under = page.findBlockInside('i-popup');
+
+            var page = this.findBlockOutside('b-page'),
+                under = this.findBlockInside('i-popup');
+
+            under.domElem.remove();
+            page.domElem.append(under.domElem);
+
+            (this._under = this.findBlockOn(under.domElem, 'i-popup'))
                 .on(
                     {
                         'show'          : this._onUnderShowed,
@@ -288,11 +296,9 @@ BEM.DOM.decl('popup',  /** @lends block.prototype */ {
                     },
                     this)
                 .elem('content').append(this.domElem);
-
         }
 
         return this._under;
-
     },
 
     _onUnderShowed : function() {

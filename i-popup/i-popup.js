@@ -67,7 +67,6 @@ BEM.DOM.decl('i-popup', {
                 var under = this._getUnder(),
                     underParent = under.parent();
 
-                console.log(underParent);
                 this.hasMod(under, 'type', 'paranja')?
                     underParent.is('body') || under.appendTo('body') :
                     (underParent[0] !== this.domElem[0]) && under.prependTo(this.domElem);
