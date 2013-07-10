@@ -77,7 +77,7 @@
                 var customSelectArrow = $('<'+options.element+' class="customSelectArrow" />');
                 var customSelectOptions = $('<'+options.element+' class="customSelectOptions" />');
                 var customSelectScroll = $('<'+options.element+' class="customSelectScroll" />');
-                for (i in selectOptions) {
+                for (var i = 0; i < selectOptions.length; i++) {
                     var option = $('<'+options.element+' class="customSelectOption" rel="'+selectOptions[i].value+'">'+selectOptions[i].text+'</'+options.element+'>');
                     selectOptionsDOM.push(option[0]);
                 }
@@ -113,7 +113,7 @@
 
                 customSelectOptions.css('width', container_width+'px');
                 customSelectOptions.append(customSelectScroll);
-                for (i in selectOptionsDOM) {
+                for (var i = 0; i < selectOptionsDOM.length; i++) {
                     customSelectScroll.append(selectOptionsDOM[i]);
                 }
 
