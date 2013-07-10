@@ -1,9 +1,11 @@
-@font-face {
+/*@font-face {
     font-family: 'Open Sans', sans-serif;
     src: local('OpenSans');
     src: url('OpenSans-Regular.ttf');
 }
+*/
 
+/*@import url(http://fonts.googleapis.com/css?family=Open+Sans&subset=latin,cyrillic-ext);*/
 .font_face_opensans
 {
     font-family: 'Open Sans', sans-serif;
