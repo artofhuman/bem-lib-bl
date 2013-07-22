@@ -1,6 +1,6 @@
-block b-footer {
+block footer {
 
-    tag: 'div'
+    tag: 'footer'
 
     content: [
         {

@@ -1,0 +1,18 @@
+.content_with_right-sidebar
+{
+    width: 100%;
+}
+.content_with_right-sidebar .content__right
+{
+    display: inline-block;
+}
+
+.content_with_right-sidebar .content__main
+{
+    display: inline-block;
+}
+.content_with_right-sidebar .content__right,
+.content_with_right-sidebar .b-content__main
+{
+    vertical-align: top;
+}

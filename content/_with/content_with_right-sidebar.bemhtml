@@ -1,5 +1,6 @@
-block b-content, mod with right-sidebar {
+block content, mod with right-sidebar {
 
+    tag: 'section'
     //mix: [{ block: 'b-text'}],
 
     content: [
@@ -9,6 +10,7 @@ block b-content, mod with right-sidebar {
         },
         {
             elem: 'right',
+            tag: 'aside',
             content: this.ctx.right
         }
     ]
