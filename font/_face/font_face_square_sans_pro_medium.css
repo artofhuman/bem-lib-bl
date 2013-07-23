@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'PFSquareSansPro-Medium';
+    src: local('PFSquareSansPro-Medium');
+    src: url('../source/PFSquareSansPro-Medium.ttf');
+    font-weight: normal;
+}
+
+.font_face_daxlinepro
+{
+    font-family: 'PFSquareSansPro-Medium';
+}
