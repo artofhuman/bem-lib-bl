@@ -1,7 +1,7 @@
 html, body{
     height: 100%;
     margin: 0;
-    padding: 0;    
+    padding: 0;
 }
 .b-page-inner
 {
@@ -9,4 +9,8 @@ html, body{
 	min-height:100%;
 	height:auto !important;
 	height:100%;
+}
+.b-page-inner__footer-blank
+{
+    height: 265px;
 }

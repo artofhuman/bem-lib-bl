@@ -1,0 +1,23 @@
+.content_with_left-and-right-sidebar .content__left
+{
+    display: inline-block;
+}
+
+.content_with_left-and-right-sidebar .content__right
+{
+    display: inline-block;
+}
+
+.content_with_left-and-right-sidebar .content__main
+{
+    display: inline-block;
+}
+.content_with_left-and-right-sidebar .content__left,
+.content_with_left-and-right-sidebar .content__main,
+.content_with_left-and-right-sidebar .content__right
+{
+    vertical-align: top;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}

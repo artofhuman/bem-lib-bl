@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'PFSquareSansPro-Regular';
+    src: local('PFSquareSansPro-Regular');
+    src: url('../source/PFSquareSansPro-Regular.ttf');
+    font-weight: normal;
+}
+
+.font_square_sans_pro_regular
+{
+    font-family: 'PFSquareSansPro-Regular';
+}
