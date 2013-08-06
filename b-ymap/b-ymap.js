@@ -47,12 +47,30 @@ BEM.DOM.decl('b-ymap', {
             myCollection = new ymaps.GeoObjectCollection();
 
             for (var i = 0; i < placeholders.length; i++) {
-                myCollection.add(new ymaps.Placemark(placeholders[i].coords, placeholders[i].params, {preset: 'twirl#blueStretchyIcon'}));
+                myCollection.add(new ymaps.Placemark(
+                    placeholders[i].coords,
+                    this._contentPlaceholderParams(placeholders[i]),
+                    this._iconPlaceholderParams(placeholders[i])
+                ));
             }
 
             map.geoObjects.add(myCollection);
         }
+    },
 
+    /**
+     * Возвращает хеш с параметрами иконки для балуна
+     * @param {Object} baloon
+     */
+    _iconPlaceholderParams:  function(placeholder) {
+        return placeholder.icon || { preset: 'twirl#blueStretchyIcon' }
+    },
+
+    /**
+     * Возвращает хеш с параметрами для контента балуна
+     */
+    _contentPlaceholderParams: function(placeholder) {
+        return placeholder.params || {}
     },
 
     /**
@@ -69,6 +87,9 @@ BEM.DOM.decl('b-ymap', {
         return jQuery.extend(default_params, this.params.map);
     },
 
+    /**
+     * Возвращает массив с балунами
+     */
     _getPlaceholdersParams: function() {
         return this.params.placeholders || null;
     }

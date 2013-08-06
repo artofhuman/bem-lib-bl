@@ -36,3 +36,21 @@
             ]
         }
     }
+
+## Балун с кастомной картинкой и без контента
+
+    {
+        block: 'b-ymap',
+        js: {
+            placeholders: [
+                {
+                    coords: [56.837944, 60.596653],
+                    params: {},
+                    icon: {
+                        iconImageHref: '/img/baloon.png',
+                        iconImageSize: [119, 86],
+                    }
+                }
+            ]
+        }
+    }
