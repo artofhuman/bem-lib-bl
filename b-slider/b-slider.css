@@ -5,6 +5,7 @@
 {
     position: relative;
     overflow: hidden;
+    height: inherit;
 }
 .b-slider__jcarousel{
     position: absolute;

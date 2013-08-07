@@ -1,5 +1,7 @@
 block b-slider {
 
+    js: true
+
     tag: 'div'
 
     content: [
@@ -12,7 +14,7 @@ block b-slider {
             content: {
                 elem: 'jcarousel',
                 tag: 'ul',
-                content: this.ctx.content 
+                content: this.ctx.content
             }
         },
         {
