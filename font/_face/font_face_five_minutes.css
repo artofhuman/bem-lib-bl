@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Five Minutes';
+    src: local('Five Minutes');
+    src: url('../source/five_minutes.ttf');
+    font-weight: normal;
+}
+
+.font_face_five_minutes
+{
+    font-family: 'Five Minutes';
+}
