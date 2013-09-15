@@ -1,9 +1,10 @@
-block b-content, mod with left-sidebar {
+block content, mod with left-sidebar {
 
     content: [
         {
             elem: 'left',
-            content: this.ctx.left
+            content: this.ctx.left,
+            tag: 'aside'
         },
         {
             elem: 'main',

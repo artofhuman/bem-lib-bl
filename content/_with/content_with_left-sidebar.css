@@ -1,0 +1,20 @@
+.content_with_left-sidebar
+{
+    width: 100%;
+}
+.content_with_left-sidebar .content__left
+{
+    display: inline-block;
+    width: 30%;
+}
+
+.content_with_left-sidebar .content__main
+{
+    display: inline-block;
+    width: 70%;
+}
+.content_with_left-sidebar .content__left,
+.content_with_left-sidebar .content__main
+{
+    vertical-align: top;
+}
