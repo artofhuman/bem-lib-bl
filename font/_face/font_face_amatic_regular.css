@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'AmaticSC-Regular';
+    src: local('AmaticSC-Regular');
+    src: url('../source/AmaticSC-Regular.ttf');
+}
+
+.font_face_amatic_regular
+{
+    font-family: 'AmaticSC-Regular';
+}
