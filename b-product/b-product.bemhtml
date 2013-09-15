@@ -31,7 +31,7 @@ block b-product , elem image {
         url: '#',
         content: {
             tag: 'img',
-            attrs: {'src': 'http://placekitten.com/140/100'}
+            attrs: {'src': 'http://placehold.it/140x100'}
         }
     }
 }

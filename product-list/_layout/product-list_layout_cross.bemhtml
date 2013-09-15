@@ -1,0 +1,20 @@
+block product-list, mod layout cross {
+
+  content: {
+    elem: 'inner',
+    mix: [{ block: 'i-clearfix'} ],
+    content: [
+      { block: 'b-product' },
+      { block: 'b-product' },
+      { block: 'b-product' },
+      { block: 'b-product' },
+      { block: 'b-product' },
+      { block: 'b-product' },
+      { block: 'b-product' },
+      { block: 'b-product' },
+      { block: 'b-product' },
+      { block: 'b-product' }
+    ]
+  }
+
+}
