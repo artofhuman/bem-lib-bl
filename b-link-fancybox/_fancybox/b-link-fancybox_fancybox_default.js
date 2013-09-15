@@ -11,8 +11,8 @@ BEM.DOM.decl({ block: 'b-link-fancybox', modName: 'fancybox', modVal: 'default'}
 
         // Check if has attr for group
         if (_this.attr('rel')) {
-            var ar_images = new Array();
-            var cur_link_index = $(".b-link-fancybox[rel='gallery']").index($(_this));
+            var ar_images = [],
+                cur_link_index = $(".b-link-fancybox[rel='gallery']").index($(_this));
 
             $(".b-link-fancybox[rel='gallery']").each(function (i, e) {
                 ar_images.push($(e).attr('href'));
