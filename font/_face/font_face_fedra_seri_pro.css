@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'FedraSerifBPro';
+    src: url(../source/fedraserifpro_b_normal-webfont.eot);
+    src: url(../source/fedraserifpro_b_normal-webfont.eot?#iefix) format("embedded-opentype"), url(../source/fedraserifpro_b_normal-webfont.svg#five_minutesregular) format("svg"), url(../source/fedraserifpro_b_normal-webfont.woff) format("woff"), url(../source/fedraserifpro_b_normal-webfont.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal
+}
+
+.font_face_fedra_seri_pro
+{
+    font-family: 'FedraSerifBPro';
+}
