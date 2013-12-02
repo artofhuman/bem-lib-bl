@@ -1,20 +1,22 @@
 block product-list, mod layout cross {
 
-  content: {
-    elem: 'inner',
-    mix: [{ block: 'i-clearfix'} ],
-    content: [
-      { block: 'b-product' },
-      { block: 'b-product' },
-      { block: 'b-product' },
-      { block: 'b-product' },
-      { block: 'b-product' },
-      { block: 'b-product' },
-      { block: 'b-product' },
-      { block: 'b-product' },
-      { block: 'b-product' },
-      { block: 'b-product' }
-    ]
-  }
+    content: {
+        elem: 'inner',
+        products_count: this.ctx.products_count
+    }
 
+}
+
+block product-list, elem inner {
+    mix: [{ block: 'i-clearfix'} ],
+    content: {
+        var c = [],
+            products_count = this.ctx.products_count || 10;
+
+        for (i = 1; i <= products_count; i++) {
+            c.push({ block: 'b-product'});
+        }
+
+        return c;
+    }
 }
