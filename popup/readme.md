@@ -32,11 +32,6 @@
                         {
                             elem: 'content',
                             content: 'контент'
-                        },
-                        {
-                            block: 'i-popup',
-                            mods: { autoclosable: 'yes', fixed: 'yes' },
-                            underMods: { color: 'white', type: 'paranja' }
                         }
                     ]
                 }
